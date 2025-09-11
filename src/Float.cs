@@ -23,7 +23,7 @@ public partial class Float
 
     /// <summary>
     /// The element floats to the right side of its container, allowing content to flow around its left side.
-    /// Other elements will wrap around the floated element.
+    /// Other elements will wrap around the floated element. 
     /// </summary>
     public static readonly Float Right = new("right");
 
