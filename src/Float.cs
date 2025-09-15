@@ -27,6 +27,10 @@ public partial class Float
     /// Other elements will wrap around the floated element. 
     /// </summary>
     public static readonly Float Right = new("right");
-    
+
+    public static readonly Float InlineStart = new("inline-start");
+
+    public static readonly Float InlineEnd = new("inline-end");
+
     public static implicit operator Float(GlobalKeyword style) => new(style.Value); // Value is the underlying string
 }
