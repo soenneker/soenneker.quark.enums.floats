@@ -1,4 +1,5 @@
 ﻿using Intellenum;
+using Soenneker.Quark.Enums.GlobalKeywords;
 
 namespace Soenneker.Quark.Enums.Floats;
 
@@ -26,22 +27,6 @@ public partial class Float
     /// Other elements will wrap around the floated element. 
     /// </summary>
     public static readonly Float Right = new("right");
-
-    /// <summary>
-    /// The element inherits the float value from its parent element.
-    /// This allows the element to adopt the floating behavior of its parent.
-    /// </summary>
-    public static readonly Float Inherit = new("inherit");
-
-    /// <summary>
-    /// The element resets the float property to its initial value, which is 'none'.
-    /// This effectively removes any floating behavior and returns the element to normal document flow.
-    /// </summary>
-    public static readonly Float Initial = new("initial");
-
-    /// <summary>
-    /// The element resets the float property to its inherited value if it inherits, or to its initial value if it doesn't.
-    /// This provides a way to reset the float property without explicitly knowing its initial value.
-    /// </summary>
-    public static readonly Float Unset = new("unset");
+    
+    public static implicit operator Float(GlobalKeyword style) => new(style.Value); // Value is the underlying string
 }
