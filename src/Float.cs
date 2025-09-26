@@ -1,7 +1,7 @@
 ﻿using Intellenum;
 using Soenneker.Quark.Enums.GlobalKeywords;
 
-namespace Soenneker.Quark.Enums.Floats;
+namespace Soenneker.Quark;
 
 /// <summary>
 /// An enumeration for Quark, representing HTML float CSS values.
