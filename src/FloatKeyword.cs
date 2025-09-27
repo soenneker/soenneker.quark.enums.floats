@@ -7,29 +7,29 @@ namespace Soenneker.Quark.Enums;
 /// This enum contains all valid CSS float property values for use in HTML/CSS styling.
 /// </summary>
 [Intellenum<string>]
-public partial class Float
+public partial class FloatKeyword
 {
     /// <summary>
     /// The element does not float and remains in its default position in the document flow.
     /// This is the default value for most elements.
     /// </summary>
-    public static readonly Float None = new("none");
+    public static readonly FloatKeyword None = new("none");
 
     /// <summary>
     /// The element floats to the left side of its container, allowing content to flow around its right side.
     /// Other elements will wrap around the floated element.
     /// </summary>
-    public static readonly Float Left = new("left");
+    public static readonly FloatKeyword Left = new("left");
 
     /// <summary>
     /// The element floats to the right side of its container, allowing content to flow around its left side.
     /// Other elements will wrap around the floated element. 
     /// </summary>
-    public static readonly Float Right = new("right");
+    public static readonly FloatKeyword Right = new("right");
 
-    public static readonly Float InlineStart = new("inline-start");
+    public static readonly FloatKeyword InlineStart = new("inline-start");
 
-    public static readonly Float InlineEnd = new("inline-end");
+    public static readonly FloatKeyword InlineEnd = new("inline-end");
 
-    public static implicit operator Float(GlobalKeyword style) => new(style.Value); // Value is the underlying string
+    public static implicit operator FloatKeyword(GlobalKeyword style) => new(style.Value); // Value is the underlying string
 }

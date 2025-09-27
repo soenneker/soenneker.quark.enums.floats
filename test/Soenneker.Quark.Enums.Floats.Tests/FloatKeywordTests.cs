@@ -3,7 +3,7 @@ using Xunit;
 
 namespace Soenneker.Quark.Enums.Floats.Tests;
 
-public sealed class FloatTests : UnitTest
+public sealed class FloatKeywordTests : UnitTest
 {
     [Fact]
     public void Default()
