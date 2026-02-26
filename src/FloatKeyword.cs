@@ -1,4 +1,4 @@
-using Intellenum;
+using Soenneker.Gen.EnumValues;
 
 namespace Soenneker.Quark.Enums;
 
@@ -6,7 +6,7 @@ namespace Soenneker.Quark.Enums;
 /// An enumeration for Quark, representing HTML float CSS values.
 /// This enum contains all valid CSS float property values for use in HTML/CSS styling.
 /// </summary>
-[Intellenum<string>]
+[EnumValue<string>]
 public partial class FloatKeyword
 {
     /// <summary>
