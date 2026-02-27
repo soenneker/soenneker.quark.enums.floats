@@ -7,6 +7,7 @@ namespace Soenneker.Quark.Enums;
 /// This enum contains all valid CSS float property values for use in HTML/CSS styling.
 /// </summary>
 [EnumValue<string>]
+[IncludeEnumValues(typeof(GlobalKeyword))]
 public partial class FloatKeyword
 {
     /// <summary>
@@ -30,6 +31,4 @@ public partial class FloatKeyword
     public static readonly FloatKeyword InlineStart = new("inline-start");
 
     public static readonly FloatKeyword InlineEnd = new("inline-end");
-
-    public static implicit operator FloatKeyword(GlobalKeyword style) => new(style.Value); // Value is the underlying string
 }
