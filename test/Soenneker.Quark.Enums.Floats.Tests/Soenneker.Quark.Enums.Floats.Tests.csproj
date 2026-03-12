@@ -15,7 +15,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\src\Soenneker.Quark.Enums.Floats.csproj" />
+        <ProjectReference Include="..\..\src\Soenneker.Quark.Enums.Floats\Soenneker.Quark.Enums.Floats.csproj" />
     </ItemGroup>
 
     <ItemGroup>
